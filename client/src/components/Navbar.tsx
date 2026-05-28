@@ -25,15 +25,29 @@ function Navbar() {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 40);
-    };
+  const handleScroll = () => {
+    const y = window.scrollY;
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
+    setIsScrolled((prev) => {
+      // Once navbar is small, don't make it big again until user is basically at the top
+      if (prev && y < 10) {
+        return false;
+      }
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+      // Once navbar is big, don't shrink it until user scrolls a little more
+      if (!prev && y > 90) {
+        return true;
+      }
+
+      return prev;
+    });
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  handleScroll();
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <header
