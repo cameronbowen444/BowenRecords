@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FiTrash2, FiShoppingBag, FiDisc } from "react-icons/fi";
+import { FiTrash2, FiShoppingBag } from "react-icons/fi";
 import { useCart } from "../context/CartContext";
 
 function CartPage() {
