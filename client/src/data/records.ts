@@ -1,5 +1,14 @@
 import type { RecordProduct } from "./record";
 
+import thrillerImg from "../assets/thriller.jpg";
+import rumoursImg from "../assets/rumours.jpg";
+import kindOfBlueImg from "../assets/kind-of-blue.jpg";
+import abbeyRoadImg from "../assets/abbey-road.jpg";
+import purpleRainImg from "../assets/purple-rain.jpg";
+import allEyezOnMeImg from "../assets/all-eyez-on-me.jpg";
+import backInBlackImg from "../assets/back-in-black.jpg";
+import blueTrainImg from "../assets/blue-train.jpeg";
+
 export const records: RecordProduct[] = [
   {
     id: 1,
@@ -9,8 +18,7 @@ export const records: RecordProduct[] = [
     genre: "Pop",
     format: "Vinyl",
     condition: "Very Good Plus",
-    imageUrl:
-      "https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=800&q=80",
+    imageUrl: thrillerImg,
     inStock: true,
     isNewArrival: true,
     isFeatured: true,
@@ -25,8 +33,7 @@ export const records: RecordProduct[] = [
     genre: "Rock",
     format: "Vinyl",
     condition: "Near Mint",
-    imageUrl:
-      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80",
+    imageUrl: rumoursImg,
     inStock: true,
     isNewArrival: false,
     isFeatured: true,
@@ -41,8 +48,7 @@ export const records: RecordProduct[] = [
     genre: "Jazz",
     format: "Vinyl",
     condition: "Very Good",
-    imageUrl:
-      "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80",
+    imageUrl: kindOfBlueImg,
     inStock: true,
     isNewArrival: true,
     isFeatured: true,
@@ -57,8 +63,7 @@ export const records: RecordProduct[] = [
     genre: "Rock",
     format: "Vinyl",
     condition: "Very Good Plus",
-    imageUrl:
-      "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80",
+    imageUrl: abbeyRoadImg,
     inStock: true,
     isNewArrival: false,
     isFeatured: false,
@@ -73,8 +78,7 @@ export const records: RecordProduct[] = [
     genre: "Funk / Pop",
     format: "Vinyl",
     condition: "Near Mint",
-    imageUrl:
-      "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=800&q=80",
+    imageUrl: purpleRainImg,
     inStock: true,
     isNewArrival: true,
     isFeatured: false,
@@ -83,19 +87,18 @@ export const records: RecordProduct[] = [
   },
   {
     id: 6,
-    title: "The Miseducation of Lauryn Hill",
-    artist: "Lauryn Hill",
+    title: "All Eyez on Me",
+    artist: "2Pac",
     price: 36.99,
-    genre: "Hip-Hop / Soul",
+    genre: "Hip-Hop",
     format: "Vinyl",
     condition: "Mint",
-    imageUrl:
-      "https://images.unsplash.com/photo-1524650359799-842906ca1c06?auto=format&fit=crop&w=800&q=80",
+    imageUrl: allEyezOnMeImg,
     inStock: false,
     isNewArrival: false,
     isFeatured: true,
     description:
-      "A landmark album combining hip-hop, soul, R&B, and deeply personal writing.",
+      "A legendary West Coast hip-hop album with classic production, iconic energy, and major collector appeal.",
   },
   {
     id: 7,
@@ -105,8 +108,7 @@ export const records: RecordProduct[] = [
     genre: "Hard Rock",
     format: "CD",
     condition: "Very Good Plus",
-    imageUrl:
-      "https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?auto=format&fit=crop&w=800&q=80",
+    imageUrl: backInBlackImg,
     inStock: true,
     isNewArrival: false,
     isFeatured: false,
@@ -121,8 +123,7 @@ export const records: RecordProduct[] = [
     genre: "Jazz",
     format: "Vinyl",
     condition: "Near Mint",
-    imageUrl:
-      "https://images.unsplash.com/photo-1520166012956-add9ba0835cb?auto=format&fit=crop&w=800&q=80",
+    imageUrl: blueTrainImg,
     inStock: true,
     isNewArrival: true,
     isFeatured: false,
