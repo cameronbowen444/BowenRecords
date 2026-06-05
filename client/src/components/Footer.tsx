@@ -4,80 +4,80 @@ import { FiDisc } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0d0907] text-[#fff4d6] border-t-4 border-[#d9a441]">
+    <footer className="border-t-2 border-[#d9a441] bg-[#0d0907] text-[#fff4d6]">
       {/* Thin retro strip */}
-      <div className="bg-[#d12b1f] border-b border-[#fff4d6]/15">
-        <div className="max-w-7xl mx-auto px-6 py-2">
-          <p className="text-center text-[10px] sm:text-xs font-black uppercase tracking-[0.28em] text-[#fff4d6]">
+      <div className="border-b border-[#fff4d6]/15 bg-[#d12b1f]">
+        <div className="mx-auto max-w-6xl px-4 py-1.5 sm:px-6">
+          <p className="text-center text-[9px] font-black uppercase tracking-[0.22em] text-[#fff4d6] sm:text-[10px]">
             Vintage Vinyl • Rare Finds • Classic Records
           </p>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-10">
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-[1.4fr_0.8fr_0.8fr_1fr]">
           {/* Brand */}
           <div>
-            <Link to="/" className="inline-flex items-center gap-3 group">
-              <div className="w-11 h-11 rounded-full bg-[#160f0b] border-2 border-[#fff4d6] shadow-[0_0_0_3px_#d12b1f] flex items-center justify-center group-hover:rotate-12 transition">
-                <FiDisc className="text-[#d9a441]" size={23} />
+            <Link to="/" className="group inline-flex items-center gap-2.5">
+              <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#fff4d6] bg-[#160f0b] shadow-[0_0_0_2px_#d12b1f] transition group-hover:rotate-12">
+                <FiDisc className="text-[#d9a441]" size={18} />
               </div>
 
               <div>
-                <h2 className="text-2xl font-black uppercase leading-none">
+                <h2 className="text-xl font-black uppercase leading-none">
                   Bowen
                   <span className="block text-[#d9a441]">Records</span>
                 </h2>
 
-                <p className="text-[11px] text-[#fff4d6]/50 uppercase tracking-[0.2em] mt-1">
+                <p className="mt-1 text-[9px] uppercase tracking-[0.18em] text-[#fff4d6]/50">
                   Vinyl • CDs • Classics
                 </p>
               </div>
             </Link>
 
-            <p className="text-[#fff4d6]/55 mt-5 max-w-sm leading-relaxed text-sm">
+            <p className="mt-4 max-w-xs text-xs leading-5 text-[#fff4d6]/55">
               A retro online record shop for classic albums, rare finds, and
               crate-digging collectors.
             </p>
 
-            <div className="flex items-center gap-3 mt-6">
+            <div className="mt-5 flex items-center gap-2.5">
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-[#160f0b] border border-[#fff4d6]/15 text-[#fff4d6]/65 hover:bg-[#d12b1f] hover:text-white transition flex items-center justify-center"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-[#fff4d6]/15 bg-[#160f0b] text-[#fff4d6]/65 transition hover:bg-[#d12b1f] hover:text-white"
                 aria-label="Instagram"
               >
-                <FaInstagram size={18} />
+                <FaInstagram size={15} />
               </a>
 
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-[#160f0b] border border-[#fff4d6]/15 text-[#fff4d6]/65 hover:bg-[#d12b1f] hover:text-white transition flex items-center justify-center"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-[#fff4d6]/15 bg-[#160f0b] text-[#fff4d6]/65 transition hover:bg-[#d12b1f] hover:text-white"
                 aria-label="Facebook"
               >
-                <FaFacebookF size={16} />
+                <FaFacebookF size={13} />
               </a>
 
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-[#160f0b] border border-[#fff4d6]/15 text-[#fff4d6]/65 hover:bg-[#d12b1f] hover:text-white transition flex items-center justify-center"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-[#fff4d6]/15 bg-[#160f0b] text-[#fff4d6]/65 transition hover:bg-[#d12b1f] hover:text-white"
                 aria-label="TikTok"
               >
-                <FaTiktok size={18} />
+                <FaTiktok size={15} />
               </a>
             </div>
           </div>
 
           {/* Shop */}
           <div>
-            <h3 className="text-sm font-black uppercase tracking-[0.22em] text-[#d9a441] mb-5">
+            <h3 className="mb-4 text-xs font-black uppercase tracking-[0.18em] text-[#d9a441]">
               Shop
             </h3>
 
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-2.5 text-xs">
               <li>
                 <Link
                   to="/records"
-                  className="text-[#fff4d6]/60 hover:text-[#d9a441] transition"
+                  className="text-[#fff4d6]/60 transition hover:text-[#d9a441]"
                 >
                   All Records
                 </Link>
@@ -86,7 +86,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/new-arrivals"
-                  className="text-[#fff4d6]/60 hover:text-[#d9a441] transition"
+                  className="text-[#fff4d6]/60 transition hover:text-[#d9a441]"
                 >
                   New Arrivals
                 </Link>
@@ -95,7 +95,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/records"
-                  className="text-[#fff4d6]/60 hover:text-[#d9a441] transition"
+                  className="text-[#fff4d6]/60 transition hover:text-[#d9a441]"
                 >
                   Vinyl
                 </Link>
@@ -104,7 +104,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/cart"
-                  className="text-[#fff4d6]/60 hover:text-[#d9a441] transition"
+                  className="text-[#fff4d6]/60 transition hover:text-[#d9a441]"
                 >
                   Cart
                 </Link>
@@ -114,15 +114,15 @@ const Footer = () => {
 
           {/* Help */}
           <div>
-            <h3 className="text-sm font-black uppercase tracking-[0.22em] text-[#d9a441] mb-5">
+            <h3 className="mb-4 text-xs font-black uppercase tracking-[0.18em] text-[#d9a441]">
               Help
             </h3>
 
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-2.5 text-xs">
               <li>
                 <Link
                   to="/contact"
-                  className="text-[#fff4d6]/60 hover:text-[#d9a441] transition"
+                  className="text-[#fff4d6]/60 transition hover:text-[#d9a441]"
                 >
                   Contact
                 </Link>
@@ -131,7 +131,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-[#fff4d6]/60 hover:text-[#d9a441] transition"
+                  className="text-[#fff4d6]/60 transition hover:text-[#d9a441]"
                 >
                   Request A Record
                 </Link>
@@ -140,7 +140,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-[#fff4d6]/60 hover:text-[#d9a441] transition"
+                  className="text-[#fff4d6]/60 transition hover:text-[#d9a441]"
                 >
                   Shipping
                 </a>
@@ -149,7 +149,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-[#fff4d6]/60 hover:text-[#d9a441] transition"
+                  className="text-[#fff4d6]/60 transition hover:text-[#d9a441]"
                 >
                   Returns
                 </a>
@@ -159,18 +159,18 @@ const Footer = () => {
 
           {/* Store Note */}
           <div>
-            <h3 className="text-sm font-black uppercase tracking-[0.22em] text-[#d9a441] mb-5">
+            <h3 className="mb-4 text-xs font-black uppercase tracking-[0.18em] text-[#d9a441]">
               Record Finder
             </h3>
 
-            <p className="text-sm text-[#fff4d6]/55 leading-relaxed">
+            <p className="text-xs leading-5 text-[#fff4d6]/55">
               Looking for a specific classic record? Send us the artist, album,
               pressing, or condition you want.
             </p>
 
             <Link
               to="/contact"
-              className="inline-flex mt-5 bg-[#d9a441] text-[#160f0b] px-5 py-3 rounded-full text-xs font-black uppercase tracking-wide border-2 border-[#fff4d6] shadow-[0_4px_0_#6b1f17] hover:translate-y-[2px] hover:shadow-[0_2px_0_#6b1f17] transition"
+              className="mt-4 inline-flex rounded-full border-2 border-[#fff4d6] bg-[#d9a441] px-4 py-2.5 text-[10px] font-black uppercase tracking-wide text-[#160f0b] shadow-[0_3px_0_#6b1f17] transition hover:translate-y-[2px] hover:shadow-[0_1px_0_#6b1f17]"
             >
               Leave A Request
             </Link>
@@ -178,15 +178,15 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-[#fff4d6]/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#fff4d6]/40">
+        <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-[#fff4d6]/10 pt-5 text-[11px] text-[#fff4d6]/40 sm:flex-row">
           <p>© 2026 Bowen Records. All rights reserved.</p>
 
-          <div className="flex items-center gap-5">
-            <a href="#" className="hover:text-[#d9a441] transition">
+          <div className="flex items-center gap-4">
+            <a href="#" className="transition hover:text-[#d9a441]">
               Privacy Policy
             </a>
 
-            <a href="#" className="hover:text-[#d9a441] transition">
+            <a href="#" className="transition hover:text-[#d9a441]">
               Terms
             </a>
           </div>
