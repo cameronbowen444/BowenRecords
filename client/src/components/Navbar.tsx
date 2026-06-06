@@ -43,7 +43,7 @@ function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-[999] w-full border-b-2 border-[#d9a441] bg-[#160f0b] text-[#fff4d6] transition-all duration-300 ${
+      className={`sticky top-0 z-[9999] w-full border-b-2 border-[#d9a441] bg-[#160f0b] text-[#fff4d6] transition-all duration-300 ${
         isScrolled
           ? "shadow-[0_3px_0_#6b1f17]"
           : "shadow-[0_5px_0_#6b1f17]"
@@ -166,6 +166,24 @@ function Navbar() {
           </button>
         </div>
       </nav>
+
+      {/* Discogs Banner */}
+      <div className="border-t border-[#fff4d6]/10 bg-[#0d0907]">
+        <div className="mx-auto flex max-w-7xl items-center justify-center px-4 py-1.5 sm:px-5">
+          <a
+            href="https://www.discogs.com/seller/bowenrecords/profile"
+            target="_blank"
+            rel="noreferrer"
+            className="group text-center text-[9px] font-black uppercase tracking-[0.2em] text-[#fff4d6]/65 transition hover:text-[#fff4d6] sm:text-[10px]"
+          >
+            Also find us on{" "}
+            <span className="text-[#d9a441] transition group-hover:text-[#fff4d6]">
+              Discogs
+            </span>{" "}
+            →
+          </a>
+        </div>
+      </div>
 
       {/* Desktop Search */}
       {isSearchOpen && (
